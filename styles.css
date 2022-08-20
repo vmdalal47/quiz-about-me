@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+
+.question-container {
+  margin: 0 0 0 20px;
+}
+
+.question-options {
+  margin-top: 10px;
+}
+
+.answer-choice {
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+
+#submit-button {
+  height: 50px;
+  width: 100px;
+  
+}
+
+#submit-container {
+  text-align: center;
+  padding-bottom: 50px;
+}

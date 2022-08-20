@@ -4,6 +4,7 @@
     <title>Quiz About Vihar</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -13,85 +14,264 @@
       <form id="questions" method="post">
         <div class="question-container" id="question-one-container">
           <div class="question" id="question-one">1. What is Vihar's favorite color?</div>
-            <input type="radio" name="question-one-option" class="answer-choice incorrect-answer">Red</input>
-            <input type="radio" name="question-one-option" class="answer-choice correct-answer">Green</input>
-            <input type="radio" name="question-one-option" class="answer-choice incorrect-answer">Blue</input>
-            <input type="radio" name="question-one-option" class="answer-choice incorrect-answer">Pink</input>
+            <div class="question-options">
+              <div>
+                <input id="q1-opt1" type="radio" name="question-one-option" class="answer-choice incorrect-answer">
+                  <label for="q1-opt1">Red</label>
+                </input></div>
+              <div>
+                <input id="q1-opt2" type="radio" name="question-one-option" class="answer-choice correct-answer">
+                  <label for="q1-opt2">Green</label>
+                </input>
+              </div>
+              <div>
+                <input id="q1-opt3" type="radio" name="question-one-option" class="answer-choice incorrect-answer">
+                  <label for="q1-opt3">Blue</label>
+                </input>
+              </div>
+              <div>
+                <input id="q1-opt4" type="radio" name="question-one-option" class="answer-choice incorrect-answer">
+                  <label for="q1-opt4">Pink</label>
+                </input>
+              </div>
+            </div>
             <p id="question-one-response" class="response"></p>
         </div>
         <div class="question-container" id="question-two-container">
           <div class="question" id="question-two">2. Where did Vihar go to school?</div>
-            <input type="radio" name="question-two-option" class="answer-choice correct-answer">University of South Carolina</input>
-            <input type="radio" name="question-two-option" class="answer-choice incorrect-answer">University of Southern California</input>
-            <input type="radio" name="question-two-option" class="answer-choice incorrect-answer">Clemson University</input>
-            <input type="radio" name="question-two-option" class="answer-choice incorrect-answer">Georgetown</input>
+          <div class="question-options">
+            <div>
+              <input id="q2-opt1" type="radio" name="question-two-option" class="answer-choice correct-answer">
+                <label for="q2-opt1">University of South Carolina</label>
+              </input>
+            </div>
+            <div>
+              <input id="q2-opt2" type="radio" name="question-two-option" class="answer-choice incorrect-answer">
+                <label for="q2-opt2">University of Southern California</label>
+              </input>
+            </div>
+            <div>
+              <input id="q2-opt3" type="radio" name="question-two-option" class="answer-choice incorrect-answer">
+                <label for="q2-opt3">Clemson University</label>
+              </input>
+            </div>
+            <div>
+              <input id="q2-opt4" type="radio" name="question-two-option" class="answer-choice incorrect-answer">
+                <label for="q2-opt4">Georgetown</label>
+              </input>
+            </div>
+          </div>
             <p id="question-two-response" class="response"></p>
         </div>
         <div class="question-container" id="question-three-container">
           <div class="question" id="question-three">3. Vihar plays which of the following instruments?</div>
-            <input type="radio" name="question-three-option" class="answer-choice incorrect-answer">Viola</input>
-            <input type="radio" name="question-three-option" class="answer-choice incorrect-answer">Banjo</input>
-            <input type="radio" name="question-three-option" class="answer-choice correct-answer">Cello</input>
-            <input type="radio" name="question-three-option" class="answer-choice incorrect-answer">Violin</input>
+          <div class="question-options">
+            <div>
+              <input id="q3-opt1" type="radio" name="question-three-option" class="answer-choice incorrect-answer">
+                <label for="q3-opt1">Viola</label>
+              </input>
+            </div>
+            <div>
+              <input id="q3-opt2" type="radio" name="question-three-option" class="answer-choice incorrect-answer">
+                <label for="q3-opt2">Banjo</label>
+              </input>
+            </div>
+            <div>
+              <input id="q3-opt3" type="radio" name="question-three-option" class="answer-choice correct-answer">
+                <label for="q3-opt3">Cello</label>
+              </input>
+            </div>
+            <div>
+              <input id="q3-opt4" type="radio" name="question-three-option" class="answer-choice incorrect-answer">
+                <label for="q3-opt4">Violin</label>
+              </input>
+            </div>
             <p id="question-three-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-four-container">
           <div class="question" id="question-four">4. What was Vihar's major in college?</div>
-            <input type="radio" name="question-four-option" class="answer-choice incorrect-answer">Economics</input>
-            <input type="radio" name="question-four-option" class="answer-choice correct-answer">Finance</input>
-            <input type="radio" name="question-four-option" class="answer-choice incorrect-answer">Math</input>
-            <input type="radio" name="question-four-option" class="answer-choice incorrect-answer">Spanish</input>
+          <div class="question-options">
+            <div>
+              <input id="q4-opt1" type="radio" name="question-four-option" class="answer-choice incorrect-answer">
+                <label for="q4-opt1">Economics</label>
+              </input>
+            </div>
+            <div>
+              <input id="q4-opt2" type="radio" name="question-four-option" class="answer-choice correct-answer">
+                <label for="q4-opt2">Finance</label>
+              </input>
+            </div>
+            <div>
+              <input id="q4-opt3" type="radio" name="question-four-option" class="answer-choice incorrect-answer">
+                <label for="q4-opt3">Math</label>
+              </input>
+            </div>
+            <div>
+              <input id="q4-opt4" type="radio" name="question-four-option" class="answer-choice incorrect-answer">
+                <label for="q4-opt4">Spanish</label>
+              </input>
+            </div>
             <p id="question-four-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-five-container">
           <div class="question" id="question-five">5. What is Vihar's favorite movie?</div>
-            <input type="radio" name="question-five-option" class="answer-choice incorrect-answer">Rush Hour</input>
-            <input type="radio" name="question-five-option" class="answer-choice correct-answer">Avatar (James Cameron)</input>
-            <input type="radio" name="question-five-option" class="answer-choice incorrect-answer">Infinity War</input>
-            <input type="radio" name="question-five-option" class="answer-choice incorrect-answer">Arrival</input>
+          <div class="question-options">
+            <div>
+              <input id="q5-opt1" type="radio" name="question-five-option" class="answer-choice incorrect-answer">
+                <label for="q5-opt1">Rush Hour</label>
+              </input>
+            </div>
+            <div>
+              <input id="q5-opt2" type="radio" name="question-five-option" class="answer-choice correct-answer">
+                <label for="q5-opt2">Avatar (James Cameron)</label>
+              </input>
+            </div>
+            <div>
+              <input id="q5-opt3" type="radio" name="question-five-option" class="answer-choice incorrect-answer">
+                <label for="q5-opt3">Infinity War</label>
+              </input>
+            </div>
+            <div>
+              <input id="q5-opt4" type="radio" name="question-five-option" class="answer-choice incorrect-answer">
+                <label for="q5-opt4">Arrival</label>
+              </input>
+            </div>
             <p id="question-five-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-six-container">
           <div class="question" id="question-six">6. What is Vihar's favorite fruit?</div>
-            <input type="radio" name="question-six-option" class="answer-choice correct-answer">Mango</input>
-            <input type="radio" name="question-six-option" class="answer-choice incorrect-answer">Strawberry</input>
-            <input type="radio" name="question-six-option" class="answer-choice incorrect-answer">Pineapple</input>
-            <input type="radio" name="question-six-option" class="answer-choice incorrect-answer">Banana</input>
+          <div class="question-options">
+            <div>
+              <input id="q6-opt1" type="radio" name="question-six-option" class="answer-choice correct-answer">
+                <label for="q6-opt1">Mango</label>
+              </input>
+            </div>
+            <div>
+              <input id="q6-opt2" type="radio" name="question-six-option" class="answer-choice incorrect-answer">
+                <label for="q6-opt2">Strawberry</label>
+              </input>
+            </div>
+            <div>
+              <input id="q6-opt3" type="radio" name="question-six-option" class="answer-choice incorrect-answer">
+                <label for="q6-opt3">Pineapple</label>
+              </input>
+            </div>
+            <div>
+              <input id="q6-opt4" type="radio" name="question-six-option" class="answer-choice incorrect-answer">
+                <label for="q6-opt4">Banana</label>
+              </input>
+            </div>
             <p id="question-six-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-seven-container">
           <div class="question" id="question-seven">7. Where do Vihar's parents come from?</div>
-            <input type="radio" name="question-seven-option" class="answer-choice incorrect-answer">Wyoming</input>
-            <input type="radio" name="question-seven-option" class="answer-choice incorrect-answer">Punjab</input>
-            <input type="radio" name="question-seven-option" class="answer-choice incorrect-answer">Kerala</input>
-            <input type="radio" name="question-seven-option" class="answer-choice correct-answer">Gujarat</input>
+          <div class="question-options">
+            <div>
+              <input id="q7-opt1" type="radio" name="question-seven-option" class="answer-choice incorrect-answer">
+                <label for="q7-opt1">Wyoming</label>
+              </input>
+            </div>
+            <div>
+              <input id="q7-opt2" type="radio" name="question-seven-option" class="answer-choice incorrect-answer">
+                <label for="q7-opt2">Punjab</label>
+              </input>
+            </div>
+            <div>
+              <input id="q7-opt3" type="radio" name="question-seven-option" class="answer-choice incorrect-answer">
+                <label for="q7-opt3">Kerala</label>
+              </input>
+            </div>
+            <div>
+              <input id="q7-opt4" type="radio" name="question-seven-option" class="answer-choice correct-answer">
+                <label for="q7-opt4">Gujarat</label>
+              </input>
+            </div>
             <p id="question-seven-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-eight-container">
           <div class="question" id="question-eight">8. Where did Vihar grow up?</div>
-            <input type="radio" name="question-eight-option" class="answer-choice correct-answer">South Carolina</input>
-            <input type="radio" name="question-eight-option" class="answer-choice incorrect-answer">North Carolina</input>
-            <input type="radio" name="question-eight-option" class="answer-choice incorrect-answer">Georgia</input>
-            <input type="radio" name="question-eight-option" class="answer-choice incorrect-answer">Wyoming</input>
+          <div class="question-options">
+            <div>
+              <input id="q8-opt1" type="radio" name="question-eight-option" class="answer-choice correct-answer">
+                <label for="q8-opt1">South Carolina</label>
+              </input>
+            </div>
+            <div>
+              <input id="q8-opt2" type="radio" name="question-eight-option" class="answer-choice incorrect-answer">
+                <label for="q8-opt2">North Carolina</label>
+              </input>
+            </div>
+            <div>
+              <input id="q8-opt3" type="radio" name="question-eight-option" class="answer-choice incorrect-answer">
+                <label for="q8-opt3">Georgia</label>
+              </input>
+            </div>
+            <div>
+              <input id="q8-opt4" type="radio" name="question-eight-option" class="answer-choice incorrect-answer">
+                <label for="q8-opt4">Wyoming</label>
+              </input>
+            </div>
             <p id="question-eight-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-nine-container">
           <div class="question" id="question-nine">9. Vihar has how many siblings?</div>
-            <input type="radio" name="question-nine-option" class="answer-choice incorrect-answer">One</input>
-            <input type="radio" name="question-nine-option" class="answer-choice correct-answer">Two</input>
-            <input type="radio" name="question-nine-option" class="answer-choice incorrect-answer">Three</input>
-            <input type="radio" name="question-nine-option" class="answer-choice incorrect-answer">Four</input>
+          <div class="question-options">
+            <div>
+              <input id="q9-opt1" type="radio" name="question-nine-option" class="answer-choice incorrect-answer">
+                <label for="q9-opt1">One</label>
+              </input>
+            </div>
+            <div>
+              <input id="q9-opt2" type="radio" name="question-nine-option" class="answer-choice correct-answer">
+                <label for="q9-opt2">Two</label>
+              </input>
+            </div>
+            <div>
+              <input id="q9-opt3" type="radio" name="question-nine-option" class="answer-choice correct-answer">
+                <label for="q9-opt3">Three</label>
+              </input>
+            </div>
+            <div>
+              <input id="q9-opt4" type="radio" name="question-nine-option" class="answer-choice incorrect-answer">
+                <label for="q9-opt4">Four</label>
+              </input>
+            </div>
             <p id="question-nine-response" class="response"></p>
+          </div>
         </div>
         <div class="question-container" id="question-ten-container">
           <div class="question" id="question-nine">10. Vihar has not been to which continent?</div>
-            <input type="radio" name="question-ten-option" class="answer-choice incorrect-answer">Asia</input>
-            <input type="radio" name="question-ten-option" class="answer-choice incorrect-answer">Europe</input>
-            <input type="radio" name="question-ten-option" class="answer-choice incorrect-answer">North America</input>
-            <input type="radio" name="question-ten-option" class="answer-choice correct-answer">South America</input>
+          <div class="question-options">
+            <div>
+              <input id="q10-opt1" type="radio" name="question-ten-option" class="answer-choice incorrect-answer">
+                <label for="q10-opt1">Asia</label>
+              </input>
+            </div>
+            <div>
+              <input id="q10-opt2" type="radio" name="question-ten-option" class="answer-choice incorrect-answer">
+                <label for="q10-opt2">Europe</label>
+              </input>
+            </div>
+            <div>
+              <input id="q10-opt3" type="radio" name="question-ten-option" class="answer-choice incorrect-answer">
+                <label for="q10-opt3">North America</label>
+              </input>
+            </div>
+            <div>
+              <input id="q10-opt4" type="radio" name="question-ten-option" class="answer-choice correct-answer">
+                <label for="q10-opt4">South America</label>
+              </input>
+            </div>
             <p id="question-ten-response" class="response"></p>
+          </div>
         </div>
-        <input type="button" value="Submit" id="submit-button"></input>
+        <div id="submit-container"><input type="button" value="Submit" id="submit-button"></input></div>
       </form>
     </main>
     <script src="app.js" charset="utf-8"></script>
