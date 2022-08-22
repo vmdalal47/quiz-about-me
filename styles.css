@@ -10,6 +10,7 @@ h1 {
 
 .question-container {
   margin: 0 0 0 20px;
+  position: relative;
 }
 
 .question-options {
@@ -19,6 +20,18 @@ h1 {
 .answer-choice {
   display: inline-block;
   margin: 0 0 0 0;
+}
+
+.question-image {
+  position: absolute;
+  top: 0%;
+  right: 10%;
+}
+
+.question-image > img {
+  width: 7em;
+  height: 5em;
+  margin: 20px;
 }
 
 #submit-button {
