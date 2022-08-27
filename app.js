@@ -1,4 +1,5 @@
 const submit_button = document.getElementById("submit-button");
+const clear_answers_button = document.getElementById("clear-answers-button");
 const questions = document.getElementsByClassName("question");
 const responses = document.getElementsByClassName("response");
 const question_containers = document.getElementsByClassName("question-container");
@@ -50,3 +51,4 @@ function check_answers() {
 
 
 submit_button.addEventListener("click", check_answers);
+clear_answers_button.addEventListener("click", () => {window.location.reload()});

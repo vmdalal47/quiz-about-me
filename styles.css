@@ -22,7 +22,7 @@ h1 {
   margin: 0 0 0 0;
 }
 
-.answer-choice, label:hover, #submit-button {
+.answer-choice, label:hover, #submit-button, #clear-answers-button {
   cursor: pointer;
 }
 
@@ -38,13 +38,13 @@ h1 {
   margin: 20px;
 }
 
-#submit-button {
+#submit-button, #clear-answers-button {
   height: 50px;
   width: 100px;
   
 }
 
-#submit-container {
+#submit-container, #clear-answers-container {
   text-align: center;
   padding-bottom: 50px;
 }
