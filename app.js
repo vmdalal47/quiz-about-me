@@ -23,6 +23,9 @@ function check_answers() {
           response.innerHTML = "Sorry, that is incorrect.";
           response.style.color = "red";
         }
+      } else {
+        response.innerHTML = "You forgot to respond!";
+        response.style.color = "purple";
       }
     }
   }
