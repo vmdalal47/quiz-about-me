@@ -44,3 +44,9 @@ h1 {
   text-align: center;
   padding-bottom: 50px;
 }
+
+#total_score {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}

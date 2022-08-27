@@ -30,7 +30,8 @@ function check_answers() {
     }
   }
   let total_score = document.createElement("p");
-  total_score.textContent = "You got " + number_of_questions_answered_correctly + " out of " + number_of_questions + " questions right.";
+  total_score.textContent = "You got " + number_of_questions_answered_correctly + " out of " + number_of_questions + " questions right!";
+  total_score.id = "total_score";
   main_element.appendChild(total_score);
 }
 
