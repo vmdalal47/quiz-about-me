@@ -25,12 +25,12 @@ function check_answers() {
       if (answer_choice.checked) {
         if (answer_choice.classList.contains("correct-answer")) {
           response.innerHTML = "Correct!";
-          response.style.color = "green";
+          response.style.color = "#1AE680";
           number_of_questions_answered_correctly++;
           was_this_question_answered = true;
         } else if (answer_choice.classList.contains("incorrect-answer")) {
           response.innerHTML = "Sorry, that is incorrect.";
-          response.style.color = "red";
+          response.style.color = "#EA3C0F";
           was_this_question_answered = true;
         }
       }/*  else {
@@ -39,7 +39,7 @@ function check_answers() {
       } */
     if (was_this_question_answered === false) {
       response.innerHTML = "You forgot to respond!";
-      response.style.color = "purple";
+      response.style.color = "#F358EF";
       }
     }
   }
