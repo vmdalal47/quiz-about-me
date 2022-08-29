@@ -1,7 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: beige;
+  background-color: black;
+  color: rgb(167, 214, 240);
+  font-size: 1.25rem;
 }
 
 h1 {
@@ -20,6 +22,21 @@ h1 {
 .answer-choice {
   display: inline-block;
   margin: 0 0 0 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0.5rem;
+  width: 0.5rem;
+
+}
+
+input[type="radio"]:checked + label{ 
+  font-weight: bold; 
+  border: 2px solid white;
+} 
+
+.answer-choice, label:hover, #submit-button, #clear-answers-button {
+  cursor: pointer;
 }
 
 .question-image {
@@ -34,13 +51,19 @@ h1 {
   margin: 20px;
 }
 
-#submit-button {
+#submit-button, #clear-answers-button {
   height: 50px;
   width: 100px;
   
 }
 
-#submit-container {
+#submit-container, #clear-answers-container {
   text-align: center;
   padding-bottom: 50px;
+}
+
+#total_score {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
 }
